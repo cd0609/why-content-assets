@@ -1,0 +1,119 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>why-carousel-1 text slide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap"
+/>
+<style>
+  :root {
+    --bg: #F7F5F1;
+    --text: #14120F;
+    --text-muted: #7A756C;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    width: 1080px;
+    height: 1440px;
+    background: var(--bg);
+    overflow: hidden;
+  }
+  .slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 80px 72px;
+    color: var(--text);
+  }
+  .top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+  .body-block {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .headline {
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 68px;
+    line-height: 1.08;
+    letter-spacing: 0.005em;
+  }
+  .subhead {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 34px;
+    line-height: 1.4;
+    color: var(--text-muted);
+    max-width: 92%;
+  }
+  .footer-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .wordmark {
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 28px;
+    letter-spacing: 0.02em;
+  }
+  .swipe {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+  .cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    background: var(--text);
+    color: var(--bg);
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 18px 32px;
+    border-radius: 4px;
+  }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="top-row">
+      <span>WHY</span>
+      <span>3/5</span>
+    </div>
+    <div class="body-block">
+      <div class="headline">RIGHT NOW, YOU KNOW EXACTLY WHY YOU'D STOP.</div>
+      <div class="subhead">That's the clearest you'll think about this all week.</div>
+    </div>
+    <div class="footer-row">
+      <span class="wordmark">WHY</span><span class="swipe">swipe &rarr;</span>
+    </div>
+  </div>
+</body>
+</html>
+
